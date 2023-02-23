@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.superpositiongraybox.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\arend\\Documents\\projects\\unity3d\\2022q3-superposition-tent\\superposition-tent\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\Arend\\Documents\\dev\\git-repos\\arrowacrobatics\\nobodies-tree-of-life\\NTL-unity\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "superposition-graybox [Testing]"
