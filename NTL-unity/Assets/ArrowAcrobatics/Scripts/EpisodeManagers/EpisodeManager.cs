@@ -25,7 +25,7 @@ public class EpisodeManager : MonoBehaviour
 
     // we are storing game objects to avoid running into the old serializer problem hassles.
     public GameObject _defaultEpisode = null;
-    public GameObject[] _episodeLaunchers;
+    public GameObject[] _episodeLaunchers = new GameObject [0];
 
     // object to ask if we can set a camera to a certain location.
     public CameraDolly _camDolly = null;
@@ -45,6 +45,7 @@ public class EpisodeManager : MonoBehaviour
     }
     public Loopmode loopMode;
     
+    [Tooltip("Use this parameter to quickly goto a specific episode with the debug button.")]
     public int debugEpisode = 0;
 
     [ContextMenu("Launch debug episode")]
@@ -166,6 +167,7 @@ public class EpisodeManager : MonoBehaviour
 
             if(_camDolly != null && _currentEpisode._cameraPreset != null) {
                 _camDolly.setTargetTransform(_currentEpisode._cameraPreset.GlobalData());
+                _camDolly.targetName = _currentEpisode._cameraPreset.name;
             }
 
         } else {
@@ -178,16 +180,24 @@ public class EpisodeManager : MonoBehaviour
         return i >= 0 && i < _episodeLaunchers.Length ? i : -1;
     }
 
-    GenericEpisode getEpisode(int i) {
+    public GenericEpisode getEpisode(int i) {
         if(getEpisodeIndex(i) != -1) {
-            GenericEpisode g = _episodeLaunchers[i].GetComponent<GenericEpisode>();
+            GameObject epiGameObj = _episodeLaunchers[i];
+            if (epiGameObj) {
+                GenericEpisode g = epiGameObj.GetComponent<GenericEpisode>();
 
-            if(g != null) {
-                return g;
+                if(g != null) {
+                    return g;
+                }
             }
+
         }
-        
-        return _defaultEpisode.GetComponent<GenericEpisode>();
+
+        if (_defaultEpisode != null) {
+            return _defaultEpisode.GetComponent<GenericEpisode>();
+        }
+
+        return null;
     }
 
 }

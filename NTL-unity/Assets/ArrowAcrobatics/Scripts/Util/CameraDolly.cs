@@ -14,7 +14,11 @@ public class CameraDolly : MonoBehaviour
     private TransformData fromLocation = null;
     private TransformData toLocation = null;
     private float timePassedSinceLastSet = 0;
+    
     public float CameraSpeed = 1;
+
+    [Tooltip("Will be set by episode manager, only for debugging purposes.")]
+    public string targetName;
 
     // TODO: ease curve
 

@@ -36,12 +36,18 @@ public class EpisodeManagerEditor : Editor
 
 
         int currEpiIndex = man._currentEpisodeIndex;
-        string currentEpisodeName = currEpiIndex < 0 || man._episodeLaunchers[currEpiIndex] == null ? "null" : man._episodeLaunchers[currEpiIndex].name;
+        GenericEpisode currentEpi = man.getEpisode(currEpiIndex);
+        string currentEpisodeName = currentEpi == null ? "null" : currentEpi.name;
         
         GUILayout.BeginHorizontal();
         GUILayout.Label("Current Episode");
         GUILayout.TextField(currEpiIndex.ToString());
         GUILayout.TextField(currentEpisodeName);
+        GUILayout.EndHorizontal();
+
+        GUILayout.BeginHorizontal();
+        GUILayout.Label("Current camera position");
+        GUILayout.TextField(man._camDolly != null ? man._camDolly.targetName : "null");
         GUILayout.EndHorizontal();
     }
 }
