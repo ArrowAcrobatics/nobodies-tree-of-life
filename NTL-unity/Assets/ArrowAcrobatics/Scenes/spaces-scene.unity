@@ -904,7 +904,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 194d05437e63a4c4f9dc8a6694894b16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _cameraPreset: {fileID: 1592774510}
+  _cameraPreset: {fileID: 1463597939}
   _objects:
   - {fileID: 1673279435}
 --- !u!1001 &412126286
@@ -2246,7 +2246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: 3a02c0049c3e7fc4bb6fbf62fa73a782, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: 3a02c0049c3e7fc4bb6fbf62fa73a782, type: 3}
       propertyPath: m_RootOrder
@@ -3282,7 +3282,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: e0a7eb63dd5d44646809795fddb058d0, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: e0a7eb63dd5d44646809795fddb058d0, type: 3}
       propertyPath: m_RootOrder
@@ -3921,7 +3921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CameraSpeed: 1
-  targetName: origin-forward
+  targetName: top-overview
 --- !u!1 &1592774509
 GameObject:
   m_ObjectHideFlags: 0
@@ -4532,7 +4532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: a03a5ff07736309428c736f965d5fdbf, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: a03a5ff07736309428c736f965d5fdbf, type: 3}
       propertyPath: m_RootOrder
@@ -4902,7 +4902,7 @@ MonoBehaviour:
   prevAction: {fileID: 0}
   nextAction: {fileID: 0}
   loopMode: 1
-  debugEpisode: 8
+  debugEpisode: 2
 --- !u!4 &1823395816
 Transform:
   m_ObjectHideFlags: 0
@@ -5612,7 +5612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -5609321221556402741, guid: e62782face416134ea1aa1c10585c731, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5146681718063874739, guid: e62782face416134ea1aa1c10585c731, type: 3}
       propertyPath: m_RootOrder
