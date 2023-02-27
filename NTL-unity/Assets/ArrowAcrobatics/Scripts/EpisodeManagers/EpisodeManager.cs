@@ -59,6 +59,20 @@ public class EpisodeManager : MonoBehaviour
         if (debugEpisode >= _episodeLaunchers.Length) { debugEpisode = -1; }
     }
 
+    public void stopAll()
+    {
+        foreach(GameObject launcher in _episodeLaunchers)
+        {
+            if (launcher != null)
+            {
+                GenericEpisode episode = launcher.GetComponent<GenericEpisode>();
+                if (episode != null) { 
+                    episode.stop(); 
+                }
+            }
+        }
+    }
+
     [ContextMenu("Launch prev")]
     public void prev() {
         if(_currentEpisode != null && _currentEpisode.prev()) {

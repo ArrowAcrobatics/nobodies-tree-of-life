@@ -32,6 +32,10 @@ public class EpisodeManagerEditor : Editor
         if(GUILayout.Button("Debug")) {
             man.LaunchDebugEpisode();
         };
+        if (GUILayout.Button("Stop all"))
+        {
+            man.stopAll();
+        };
         GUILayout.EndHorizontal();
 
 
