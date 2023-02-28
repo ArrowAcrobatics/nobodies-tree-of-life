@@ -972,6 +972,7 @@ GameObject:
   - component: {fileID: 415972941}
   - component: {fileID: 415972943}
   - component: {fileID: 415972942}
+  - component: {fileID: 415972944}
   m_Layer: 0
   m_Name: barrier-space
   m_TagString: Untagged
@@ -1030,6 +1031,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _cameraPreset: {fileID: 1181236427}
   _objects: []
+--- !u!114 &415972944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 415972940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da754b1478e95bb4d9093f16c963cc65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rends: []
+  alpha: 1
+  targetColor: _BaseColor
+  rendcount: 0
 --- !u!1 &466719627
 GameObject:
   m_ObjectHideFlags: 0
@@ -4855,7 +4872,6 @@ GameObject:
   - component: {fileID: 1828605131}
   - component: {fileID: 1828605130}
   - component: {fileID: 1828605129}
-  - component: {fileID: 1828605132}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Untagged
@@ -4942,22 +4958,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1828605127}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1828605132
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1828605127}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da754b1478e95bb4d9093f16c963cc65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rends: []
-  alpha: 1
-  targetColor: _BaseColor
-  rendcount: 0
 --- !u!1001 &1875034837
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5878,24 +5878,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6fb9b16b2328f694185608741262473c, type: 3}
---- !u!1 &919132147829125858 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 499942670947291547, guid: 6fb9b16b2328f694185608741262473c, type: 3}
-  m_PrefabInstance: {fileID: 734454956624487289}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &919132147829125859
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 919132147829125858}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da754b1478e95bb4d9093f16c963cc65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rends: []
-  alpha: 1
-  targetColor: _BaseColor
-  rendcount: 0
