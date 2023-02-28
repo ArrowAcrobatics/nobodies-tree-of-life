@@ -36,11 +36,11 @@ public class GenericEpisode : MonoBehaviour
 
     // extend these in subclasses
     public virtual void OnLaunch() {
-
+        Debug.Log("generic on launch");
     }
 
     public virtual void OnStop() {
-
+        Debug.Log("generic on stop");
     }
 
     /**
