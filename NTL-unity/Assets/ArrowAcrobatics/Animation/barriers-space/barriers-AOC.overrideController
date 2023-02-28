@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: barriers-AOC
+  m_Controller: {fileID: 9100000, guid: ec2fb3bf96a55344c890e1a4bba276ca, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 2f3166265e6ef764a8e4b257623f93ad, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 2f3166265e6ef764a8e4b257623f93ad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3588febaf7b2b5148bcfce6c9b573aaf, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 3588febaf7b2b5148bcfce6c9b573aaf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: b66513f0bed5f18418caf66d9cb16905, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: b66513f0bed5f18418caf66d9cb16905, type: 2}
