@@ -22,7 +22,6 @@ public class SpacesEpisode : GenericEpisode
     {
         Debug.Log("SpacesEpisode.OnLaunch " + gameObject.name);
         animator.SetBool(AnimActive, true);
-        animator.SetFloat("myFloat", 1.23f);
     }
 
     // Episode is stopped by the episode manager
@@ -30,6 +29,5 @@ public class SpacesEpisode : GenericEpisode
     {
         Debug.Log("SpacesEpisode.OnStop " + gameObject.name);
         animator.SetBool(AnimActive, false);
-        animator.SetFloat("myFloat", -987.0f);
     }
 }
