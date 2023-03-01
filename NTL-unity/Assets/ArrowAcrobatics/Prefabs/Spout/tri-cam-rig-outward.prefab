@@ -220,6 +220,22 @@ PrefabInstance:
       propertyPath: _spoutName
       value: tricam_outw_0
       objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1746948912498450517, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -289,6 +305,22 @@ PrefabInstance:
     - target: {fileID: 1746948912498450513, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
       propertyPath: _spoutName
       value: tricam_outw_1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1746948912498450517, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
       propertyPath: m_RootOrder
@@ -416,6 +448,22 @@ PrefabInstance:
     - target: {fileID: 1746948912498450513, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
       propertyPath: _spoutName
       value: tricam_outw_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_ClearFlags
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1746948912498450516, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
+      propertyPath: m_BackGroundColor.r
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1746948912498450517, guid: b5e33a5dce898504bbd5c426fd9a729f, type: 3}
       propertyPath: m_RootOrder
