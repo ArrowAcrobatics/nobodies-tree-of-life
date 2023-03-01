@@ -4573,6 +4573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1647119945}
   - component: {fileID: 1647119946}
+  - component: {fileID: 1647119947}
   m_Layer: 0
   m_Name: camerasystem
   m_TagString: Untagged
@@ -4618,6 +4619,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1647119947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647119944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 973dbdb969b938d45994423a31e4956e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  note: The camera system consists of all cams that render into spout textures for
+    touchdesigner.
 --- !u!1001 &1671341803
 PrefabInstance:
   m_ObjectHideFlags: 0
