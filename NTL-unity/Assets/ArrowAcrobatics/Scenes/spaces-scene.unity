@@ -2972,11 +2972,6 @@ MonoBehaviour:
   _cameraPreset: {fileID: 1181236427}
   _objects:
   - {fileID: 757697497}
---- !u!1 &1064047795 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ae45e4701f77f804a9746fa3928ef3e5, type: 3}
-  m_PrefabInstance: {fileID: 1985069279}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1064924236 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -5609321221556402741, guid: 4f4694c56d9eb434a976c75be2803237, type: 3}
@@ -4129,7 +4124,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1595726824}
-  - component: {fileID: 1595726825}
+  - component: {fileID: 1595726827}
+  - component: {fileID: 1595726828}
   m_Layer: 0
   m_Name: gas-station-space
   m_TagString: Untagged
@@ -4145,15 +4141,35 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1595726823}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.754345, y: 3.9452324, z: -2.6089172}
+  m_LocalPosition: {x: 11.754345, y: 3.945232, z: -2.6089172}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1985069280}
   m_Father: {fileID: 1823395816}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1595726825
+--- !u!95 &1595726827
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595726823}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: e121b82d44bb96b4287ec5fa83970698, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1595726828
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4162,12 +4178,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1595726823}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 194d05437e63a4c4f9dc8a6694894b16, type: 3}
+  m_Script: {fileID: 11500000, guid: dfe2878003489f64cb38fe647b413fb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _cameraPreset: {fileID: 1494607346}
-  _objects:
-  - {fileID: 1064047795}
+  _objects: []
 --- !u!1001 &1626754946
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5100,7 +5115,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1841359011
 Transform:
   m_ObjectHideFlags: 0
@@ -5435,7 +5450,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ae45e4701f77f804a9746fa3928ef3e5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ae45e4701f77f804a9746fa3928ef3e5, type: 3}

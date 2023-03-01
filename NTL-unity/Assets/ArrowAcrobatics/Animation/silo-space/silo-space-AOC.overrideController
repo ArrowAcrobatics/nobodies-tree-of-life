@@ -9,9 +9,9 @@ AnimatorOverrideController:
   m_Name: silo-space-AOC
   m_Controller: {fileID: 9100000, guid: ec2fb3bf96a55344c890e1a4bba276ca, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 3588febaf7b2b5148bcfce6c9b573aaf, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 78b0772a6f5624d40822cde34ffb2d45, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: abe24cf20d7283c459df512a433225a4, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: b66513f0bed5f18418caf66d9cb16905, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 6ff91b0b6a4ceb941bb4e7aacd8ded1b, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: f72375a743da94a4c9397fb728588582, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 2f3166265e6ef764a8e4b257623f93ad, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 48fa25f1c00e0bd439327f4a9fe40ba7, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 89d4357b8164f0348bbf063975f64407, type: 2}
