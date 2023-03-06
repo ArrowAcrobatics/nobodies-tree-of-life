@@ -6,14 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/ArrowAcrobatics/Scenes/FloorIsLava.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 0
-    path: Assets/ArrowAcrobatics/Scenes/MainPerformance.unity
-    guid: 5c05a64d69cfa8841b1c14bb5b8ccc4b
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/ArrowAcrobatics/Scenes/debugscenes/NTL-spout-out.unity
     guid: 613dc1ae3e8390e49a60303b455a8e8b
+  - enabled: 1
+    path: Assets/ArrowAcrobatics/Scenes/spaces-scene.unity
+    guid: 00fda99d03c54554682b8c137514b409
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: b6b90c2c705b499448a1a605c0266737, type: 2}
     Unity.XR.OpenVR.Settings: {fileID: 11400000, guid: 6996408269b9fcd4b8bf38ff9cde7c59, type: 2}
