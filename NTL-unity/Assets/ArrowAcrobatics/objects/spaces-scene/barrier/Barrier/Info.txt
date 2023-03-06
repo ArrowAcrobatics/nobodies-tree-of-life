@@ -1,0 +1,9 @@
+========< Barrier + Rust Material >========
+
+Model Info :
+Vertics : 9984
+Triangles : 3328
+GameReady : YES
+
+Please Leave Your Comments & Requests !!
+Good Luck
