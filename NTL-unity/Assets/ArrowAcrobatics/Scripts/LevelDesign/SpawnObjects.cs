@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpawnObjects : MonoBehaviour
-{
+
+public class SpawnObjects : MonoBehaviour {
     public GameObject[] spawnables = new GameObject[0];
 
     public Vector2 gridDimensions = new Vector2(10f, 10f);
     public Vector2Int gridCount = new Vector2Int(10, 10);
+    
     public float offsetRadius = 0.5f;
+    public Vector2 scaleRange = new Vector2(1.0f, 1.0f);
+    public Vector2 rotateRange = Vector2.zero;
 
     public void Spawn() {
-        Debug.Log("hi");
-
         if (!ValidParams()) {
             return;
         }
@@ -27,19 +28,24 @@ public class SpawnObjects : MonoBehaviour
 
         for (int x = 0; x < gridCount.x; x++) {
             for (int z = 0; z < gridCount.y; z++) { // watch the swizzle
-                // public static Object Instantiate(Object original, Vector3 position, Quaternion rotation, Transform parent);
-                Instantiate(
-                    spawnables[Random.Range(0, spawnables.Length)], 
-                    startPos + new Vector3(x*dx, transform.position.y, z*dz), 
-                    Quaternion.identity, 
+                GameObject spawnobject = spawnables[Random.Range(0, spawnables.Length)];
+
+                GameObject inst = Instantiate(
+                    spawnobject,
+                    startPos
+                        + new Vector3(x*dx, transform.position.y, z*dz)
+                        + Swizzle(offsetRadius * Random.insideUnitCircle),
+                    Quaternion.AngleAxis(Random.Range(rotateRange.x, rotateRange.y), Vector3.up),
                     transform);
+
+                inst.transform.localScale *= Random.Range(scaleRange.x, scaleRange.y);
             }
         }
     }
 
     public void Clear() {
-        // oops iterates while modifying itself...
         List<GameObject> children = new List<GameObject>();
+
         foreach(Transform child in transform) {
             children.Add(child.gameObject);
         }
