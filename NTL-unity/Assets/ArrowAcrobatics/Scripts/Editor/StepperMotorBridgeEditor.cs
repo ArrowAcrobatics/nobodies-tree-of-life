@@ -29,7 +29,7 @@ public class StepperMotorBridgeEditor : Editor
 
 
         if(GUILayout.Button("Send debug message")) {
-            component.SendString("hi from unity");
+            component.SendString("hi from unity\n");
         };
 
 

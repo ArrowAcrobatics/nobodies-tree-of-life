@@ -10,7 +10,6 @@ using UnityEngine;
 
 public class StepperMotorBridge : MonoBehaviour
 {
-    private bool initialized = false;
     private string targetIp = "127.0.0.1";
     private UdpClient client;
     private IPEndPoint remoteEndPoint;
@@ -22,14 +21,12 @@ public class StepperMotorBridge : MonoBehaviour
     }
 
     public void InitUdp() {
-        if(initialized) {
+        if(client != null && remoteEndPoint != null) {
             return;
         }
 
         remoteEndPoint = new IPEndPoint(IPAddress.Parse(targetIp), udpPort);
         client = new UdpClient();
-
-        initialized = true;
     }
 
     public void SendString(string message) {
@@ -37,10 +34,8 @@ public class StepperMotorBridge : MonoBehaviour
             return;
         }
 
-        if (!initialized) {
-            InitUdp();
-        }
-
+        InitUdp();
+        
         
         try {
             byte[] data = Encoding.UTF8.GetBytes(message);
