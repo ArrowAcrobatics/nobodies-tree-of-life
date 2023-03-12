@@ -27,7 +27,11 @@ public class StepperMotor : MonoBehaviour
         Debug.Log("ResetBounds"); 
     }
 
-    public void FixedUpdate() {
+    public void SendPosition() {
+        Debug.Log("SendPosition");
+    }
 
+    public void FixedUpdate() {
+        SendPosition();
     }
 }

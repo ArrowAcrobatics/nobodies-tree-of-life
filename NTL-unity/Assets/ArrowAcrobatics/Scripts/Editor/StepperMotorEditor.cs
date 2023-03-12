@@ -35,5 +35,9 @@ public class StepperMotorEditor : Editor
         if(GUILayout.Button("Reset bounds")) {
             component.ResetBounds();
         };
+
+        if(GUILayout.Button("Send position")) {
+            component.SendPosition();
+        };
     }
 }
