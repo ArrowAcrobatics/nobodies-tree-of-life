@@ -23,11 +23,15 @@ public class StepperMotorBridgeEditor : Editor
             return;
         }
 
-        GUILayout.BeginHorizontal();
         if(GUILayout.Button("Reset serial")) {
             component.ResetSerial();
         };
-        GUILayout.EndHorizontal();
+
+
+        if(GUILayout.Button("Send debug message")) {
+            component.SendString("hi from unity");
+        };
+
 
     }
 }
