@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class StepperMotorBridge : MonoBehaviour
 {
+    public int udpPort;
+    
     public void ResetSerial() {
         Debug.Log("ResetSerial");
     }

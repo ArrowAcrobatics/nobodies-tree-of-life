@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CustomEditor(typeof(StepperMotorEditor))]
+[CustomEditor(typeof(StepperMotor))]
 public class StepperMotorEditor : Editor
 {
     public static void DrawUILine(Color color, int thickness = 2, int padding = 10) {
@@ -30,9 +30,10 @@ public class StepperMotorEditor : Editor
         if(GUILayout.Button("Force upperbound")) {
             component.ForceUpperBound();
         }
+        GUILayout.EndHorizontal();
+
         if(GUILayout.Button("Reset bounds")) {
             component.ResetBounds();
         };
-        GUILayout.EndHorizontal();
     }
 }
